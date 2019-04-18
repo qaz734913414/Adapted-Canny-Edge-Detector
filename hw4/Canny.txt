@@ -1,0 +1,4 @@
+I successfully finished the required assignment. There are several problems that I have met and solved during the process.
+1. generating 30 gray-scale image at once. 
+2. how to use sprintf.
+3. how to use GUI tool to calibrate the canny parameters. I was able to show more detials in the gray-scale image by increasing sigma to 0.65, decreasing the value of thigh to 0.75 and increasing the value of tlow to 0.35. Sigma controls the window size, thigh controls the number of pixels that passed the non maximal suppression, tlow controls the low pixels threshold

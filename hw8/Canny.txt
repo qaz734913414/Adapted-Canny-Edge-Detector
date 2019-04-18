@@ -1,0 +1,14 @@
+Model Frame Delay 	Throughput 	Total simulated time
+CannyA8_step1 0 ms 	N/A FPS 	0 ms
+CannyA8_step2 15860 ms 	N/A FPS 	59320 ms
+CannyA8_step3 15860 ms 	0.549 FPS 	59320 ms
+CannyA8_step4 17570 ms 	0.549 FPS 	59320 ms
+CannyA8_step5 13860 ms 	0.971 FPS  	33762 ms 
+
+In this assignment, I successfully implement the required feature. The problem I met is following:
+1. It is time consuming to figure out how to add new port/channel and bind them
+2. We need a while loop inside each thread, because originally, the blurb/y is been called in a while loop
+3. The range of row and col in blurx/y is tricky, it is easy to forget the boundary value.
+
+
+

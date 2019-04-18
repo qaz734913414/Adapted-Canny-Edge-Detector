@@ -1,0 +1,56 @@
+Model Frame 	Delay 		Throughput 	Total simulated time
+CannyA8_step1 	0 ms 		N/A FPS 	0 ms
+CannyA8_step2 	15860 ms 	N/A FPS 	59320 ms
+CannyA8_step3 	15860 ms 	0.549 FPS 	59320 ms
+CannyA8_step4 	17570 ms 	0.549 FPS 	59320 ms
+CannyA8_step5 	13860 ms 	0.971 FPS  	33762 ms 
+CannyA9_step1	3923 ms		4.274 FPS	7633 ms
+CannyA9_step2	9023 ms		1.808 FPS	17191 ms	
+
+After changing the float type to int, the total simulation time increase significantly and the throughput decrease. Therefore, I decide not to change the data type. Also, after changing float type to int in the assignment 9 canny.cpp, there is 1 mismatching pixels (0.000%) identified in diff.pgm.
+
+
+########################################################################################
+Step#1 the result from Pi:
+magnitude_x_y run time 0.129352 secs
+mag runs 30 times
+derrivative_x_y run time 0.138167 secs
+der runs 30 times
+blur x run time 0.220407 secs
+blur y run time 0.384356 secs
+make_gaussian_kernel run time 0.000013 secs
+ker runs 30 times
+follow_edges run time 0.000000 secs
+fol runs 10956318 times
+apply_hysteresis run time 0.187451 secs
+app runs 30 times
+non_max_supp run time 0.234171 secs
+non runs 30 times
+read_pgm_image run time 0.008091 secs
+read runs 30 times
+write_pgm_image run time 0.014737 secs
+write runs 30 times
+
+Step#2 the result from Pi:
+magnitude_x_y run time 0.129078 secs
+mag runs 30 times
+derrivative_x_y run time 0.135474 secs
+der runs 30 times
+blur x run time 0.201300 secs
+blur y run time 0.384203 secs
+make_gaussian_kernel run time 0.000011 secs
+ker runs 30 times
+follow_edges run time 0.000000 secs
+fol runs 10956327 times
+apply_hysteresis run time 0.183152 secs
+app runs 30 times
+non_max_supp run time 0.553451 secs
+non runs 30 times
+read_pgm_image run time 0.006253 secs
+read runs 30 times
+write_pgm_image run time 0.016897 secs
+write runs 30 times
+
+
+
+

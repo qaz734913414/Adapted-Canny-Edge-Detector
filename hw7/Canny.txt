@@ -1,0 +1,17 @@
+Table of measurement results:
+canny run time 7.284222 secs
+magnitude_x_y run time 0.934390 secs
+derivative_x_y run time 0.444102 secs
+gaussian_smooth run time 3.548871 secs
+blur x run time 1.618695 secs
+blur y run time 1.920066 secs
+make_gaussian_kernel run time 0.000015 secs
+follow_edges run time 0.000508 secs
+apply_hysteresis run time 1.637252 secs
+non_max_supp run time 0.696013 secs
+read_pgm_image run time 0.007394 secs
+write_pgm_image run time 0.013662 secs
+
+In this assignment, I successfully implement the required feature, which is measure the runtime of each function.
+
+
