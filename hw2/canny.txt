@@ -1,0 +1,6 @@
+Generaly, I think my efforts were successful.
+1. the first three steps is quite easy, but step 3 still need some time to look at the function structure. The problem I met is how to hard code variable rows and cols. After running the code for several times and analyze the function "read_pgm_image," I realize rows and cols are assigned in scanf function, so I cannot simply define a global variable;
+
+2. I spend half a day on the last step. The main reason is that I am not familiar with C++ pointer and the "C style" C++ code. I spend the most time on the first malloc, because I am not so sure about how does malloc work, and how to create a fixed size array and then assign its address to another pointer. I research how does malloc and calloc work/differ, and spend some time on calculate the memory space that calloc reserve. 
+
+3. When calculating the memory space, for example delta_x, I use row * col * the size of short int, but later I realize it is wrong, because when I create the static array, the memory is already been reserved as 76800 short int(although this doesn't influence the result), so row*col is enough. 

@@ -1,0 +1,93 @@
+
+n-call tree:
+LEVEL#1: main(...)
+
+LEVEL#2: main(...) calls following functions: 
+read_pgm_image(...); 
+canny(...); 
+write_pgm_image(...);
+fprintf(...);
+printf(...);
+sprintf(...);
+exit(...);
+
+LEVEL#3: canny(...) calls following functions: 
+gaussian_smooth(...); 
+derrivative_x_y(...); 
+radian_direction(...); 
+fwrite(...); 
+fclose(...); 
+fopen(...);
+free(...); 
+magnitude_x_y(...); 
+calloc(...); 
+sizeof(...); 
+non_max_supp(...);
+apply_hysteresis(...); 
+fprintf(...);
+printf(...);
+exit(...);
+
+LEVEL#3: read_pgm_image(...) calls following functions: 
+strncmp(...); 
+fclose(...); 
+fgets(...); 
+sscanf(...); 
+malloc(...); 
+free(...); 
+fprintf(...);
+
+LEVEL#3: write_pgm_image(...) calls following functions:
+fopen(...);
+strlen(...);
+fclose(...);
+fprintf(...);
+
+LEVEL#4: gaussian_smooth(...) calls following functions:
+make_gaussian_kernel(...);
+printf(...);
+fprintf(...);
+exit(...);
+calloc(...);
+sizeof(...);
+free(...);
+
+LEVEL#4: derrivative_x_y(...) calls following functions:
+calloc(...);
+printf(...);
+fprintf(...);
+exit(...);
+
+LEVEL#4: radian_direction(...) calls following functions:
+calloc(...);
+fprintf(...);
+angle_radians(...);
+
+LEVEL#4: magnitude_x_y(...) calls following functions:
+fprintf(...);
+calloc(...);
+sizeof(...);
+
+LEVEL#4: non_max_supp(...) calls following functions:
+non
+
+LEVEL#4: apply_hysteresis(...) calls following functions:
+printf(...);
+
+LEVEL#5: make_gaussian_kernel(...) calls following functions:
+ceil(...);
+calloc(...);
+fprintf(...);
+exit(...);
+printf(...);
+
+LEVEL#5: angle_radians(...) calls following functions:
+fabs(...);
+atan(...);
+
+
+
+
+
+
+
